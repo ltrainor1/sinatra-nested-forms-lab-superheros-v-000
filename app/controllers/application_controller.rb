@@ -10,8 +10,12 @@ end
 
 post '/team' do
   @team = Team.new(params[:team])
-  
-  erb :team
+
+  params[:team][:hero].each do |details|
+    Hero.new(details)
+  end
+
+  @ships = Ship.all
 end
 
 end
