@@ -1,5 +1,5 @@
 require 'sinatra/base'
-require 'pry'
+
 class App < Sinatra::Base
 
     set :views, Proc.new { File.join(root, "../views/") }
@@ -15,7 +15,6 @@ post '/teams' do
   end
 
   @heroes = Hero.all
-  binding.pry
   erb :team
 end
 
