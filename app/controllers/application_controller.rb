@@ -10,7 +10,7 @@ end
 
 post '/team' do
   @team = Team.new(params[:team])
-
+binding.pry
   params[:team][:heroes].each do |details|
     Hero.new(details)
   end
