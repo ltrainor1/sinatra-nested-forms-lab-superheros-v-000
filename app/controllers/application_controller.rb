@@ -16,6 +16,7 @@ post '/team' do
   end
 
   @heroes = Hero.all
+  erb :team
 end
 
 end
