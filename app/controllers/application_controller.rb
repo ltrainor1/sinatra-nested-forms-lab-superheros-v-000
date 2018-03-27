@@ -15,7 +15,7 @@ post '/team' do
     Hero.new(details)
   end
 
-  @ships = Ship.all
+  @heroes = Hero.all
 end
 
 end
