@@ -15,6 +15,7 @@ post '/teams' do
   end
 
   @heroes = Hero.all
+  binding.pry
   erb :team
 end
 
